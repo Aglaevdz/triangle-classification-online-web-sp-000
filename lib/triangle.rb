@@ -12,6 +12,7 @@ class Triangle
 
     begin
       raise TriangleError
+    end
 
     elsif s1 == s2 && s1 == s3
     self.kind = :equilateral
