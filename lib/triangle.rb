@@ -13,7 +13,7 @@ class Triangle
       raise TriangleError
     #end
 
-    elsif s1 == s2 && s1 == s3
+  elsif s1 == s2 && s1 == s3
     self.kind = :equilateral
 
     elsif s1 == s2 || s1 == s3 || s2 == s3
@@ -26,7 +26,7 @@ class Triangle
 end
 
   class TriangleError < StandardError
-    def message
+    def messsage
       puts "not a triangle"
     end
 end
