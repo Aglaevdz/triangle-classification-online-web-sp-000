@@ -12,9 +12,7 @@ class Triangle
 
     begin
       raise TriangleError
-    rescue TriangleError => error
-      puts error.messsage
-    #end
+  
 
     elsif s1 == s2 && s1 == s3
     self.kind = :equilateral
