@@ -11,7 +11,6 @@ class Triangle
     if (s1 * s2 * s3) == 0 || (s1 + s2) <= s3 || (s2 + s3) <= s1 || (s3 + s1) <= s2
     begin
       raise TriangleError
-    #end
 
   elsif s1 == s2 && s1 == s3
     self.kind = :equilateral
@@ -21,7 +20,10 @@ class Triangle
 
     else
     self.kind = :scalene
+      end
     end
+  end
+end
 end
 
   class TriangleError < StandardError
