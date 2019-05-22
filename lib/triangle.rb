@@ -31,4 +31,4 @@ class Triangle
     def messsage
       puts "not a triangle"
     end
-end
+
